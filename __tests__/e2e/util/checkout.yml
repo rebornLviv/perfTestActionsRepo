@@ -1,0 +1,11 @@
+appId: com.ruc2024testingWorkshops.app
+---
+- tapOn: "Name input field"
+- inputText: "John Callstackish"
+- tapOn: "Address input field"
+- inputText: "P. Sherman 42 Wallaby Way Sydney"
+- hideKeyboard
+- tapOn: "Order"
+- assertVisible:
+    text: "Your order has been finished"
+- tapOn: "Close"

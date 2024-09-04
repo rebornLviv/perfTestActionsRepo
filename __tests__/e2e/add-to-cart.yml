@@ -1,0 +1,15 @@
+appId: com.ruc2024testingWorkshops.app
+---
+- runFlow: "browse-products.yml"
+- tapOn:
+    id: "product-item"
+    index: 0
+- assertVisible:
+    text: "Quantity: 1"
+- tapOn: "Increase quantity button"
+- assertVisible:
+    text: "Quantity: 2"
+- tapOn: "Add to cart"
+- tapOn: "Cart with 1 items"
+- tapOn: "Checkout"
+- runFlow: "util/checkout.yml"

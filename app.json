@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "ruc2024-testing-workshops",
+    "slug": "ruc2024-testing-workshops",
+    "scheme": "ruc2024-testing-workshops",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.ruc2024testingWorkshops.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ruc2024testingWorkshops.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router"]
+  }
+}

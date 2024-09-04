@@ -1,0 +1,17 @@
+appId: com.ruc2024testingWorkshops.app
+---
+- launchApp
+- waitForAnimationToEnd
+- assertVisible:
+    text: "Product: Essence Mascara Lash Princess"
+- scroll
+- assertVisible:
+    text: "Product: Powder Canister"
+- tapOn: "Next page"
+- assertVisible:
+    text: "Product: Bedside Table African Cherry"
+- tapOn: "Choose category"
+- tapOn:
+    point: "50%,35%"
+- assertVisible:
+    text: "Product: Calvin Klein CK One"
