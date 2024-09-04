@@ -1,0 +1,17 @@
+name: GitHub Actions
+run-name: Codebase checks
+on: [ push ]
+jobs:
+  code-quality-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: yarn install
+      - run: yarn lint
+      - run: yarn typecheck
+      - run: yarn test
+      - run: yarn e2e
+      - run: yarn perf-test
