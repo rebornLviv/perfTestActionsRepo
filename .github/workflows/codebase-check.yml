@@ -14,6 +14,5 @@ jobs:
       - run: yarn typecheck
       - run: yarn test
       - run: curl -fsSL "https://get.maestro.mobile.dev" | bash
-      - run: export PATH="$PATH":"$HOME/.maestro/bin"
-      - run: yarn e2e
+      - run: export PATH="$PATH":"$HOME/.maestro/bin" && yarn e2e
       - run: yarn perf-test
