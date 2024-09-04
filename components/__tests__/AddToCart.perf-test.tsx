@@ -17,7 +17,7 @@ describe("<AddToCartButton />", () => {
   it("renders  items in cart list", async () => {
     const scenario = async () => {
       for (let index = 0; index < 10; index++) {
-        await rntlUser.press( await screen.getByLabelText("Add to cart"))
+        await rntlUser.press(  screen.getByLabelText("Add to cart"))
       }
    };
      
