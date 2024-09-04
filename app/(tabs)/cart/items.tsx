@@ -16,7 +16,6 @@ const Items = () => {
   return (
     <View style={styles.wrapper}>
       <ScrollView style={styles.list}>
-        <FlatList /> 
         {cartItems.map((item) => (
           <CartListItem key={item.id} data={item} />
         ))}
